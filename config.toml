@@ -1,0 +1,49 @@
+# The URL the site will be built for
+base_url = "https://beccatunwell.com"
+
+# Whether to build a search index to be used later on by a JavaScript library
+compile_sass = true
+build_search_index = true
+generate_feed = true
+minify_html = true
+
+theme = "papermod"
+
+taxonomies = [
+    { name = "tags", feed = true }
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+
+[extra.papermod]
+title = "Becca's Blog"
+default_theme = "auto"
+theme = "light"
+language_direction = "auto"
+keywords = ["keyword1", "keyword2", "keyword3"]
+show_theme_toggle = true
+show_scroll_to_top = true
+show_code_copy_buttons = true
+show_reading_time = true
+show_word_count = false
+show_post_nav_links = true
+show_post_meta = true
+default_toc_open = false
+show_post_edit_button = false
+edit_post_url = "https://github.com/cydave/zola-theme-papermod/tree/master"
+#copyright = ""
+date_format = "%Y-%m-%d"
+navigation = [
+    { url = "$BASE_URL/archive", title = "Archive" },
+    { url = "$BASE_URL/tags", title = "Tags" },
+]
+
+home_title = "Becca's Blog"
+home_content = "Future site for Becca's blog"
+social_icons = [
+   ]
